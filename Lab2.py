@@ -22,7 +22,7 @@ def get_user_input():
     return numfloat
 
 def calc_average(numlist1):
-    total_temp = sum(numlist1)
+    total_temp = sum(numlist1 )
     average = total_temp / len(numlist1)
     return average
 
