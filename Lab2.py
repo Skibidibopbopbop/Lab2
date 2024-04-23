@@ -10,9 +10,7 @@ def main():
     average = calc_average(numlist)
     print("Average temperature is: " ,average)
     median_temperature(numlist)
-    print("The median temperature is: ", median_temperature)
-
-
+    
 def display_main_menu():
     print("Enter recent TEMPERATURES separated by commas (e.g. 5, 67, 32)")
     return
@@ -39,9 +37,17 @@ def sort_temperature(numlist2):
     return 
 
 def median_temperature(numlist4):
+    numlist4.sort
     n = len(numlist4)
-    s = sorted(numlist4)
-    median = ((n+1)/2)
+    if len(numlist4)%2 == 0:
+        median1 = numlist4[n//2]
+        median2 = numlist4[n//2-1]
+        median = (median1 + median2)/2
+
+    else:
+        median = numlist4[n//2]
+    print("The Median is: "+str(median))
+    
     return median 
 
 if __name__ == "__main__":     
