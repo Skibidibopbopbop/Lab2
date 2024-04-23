@@ -36,9 +36,6 @@ def sort_temperature(numlist2):
     print("Ascending order:", numlist2)
     return 
 
-#def calc_median_temperature(numlist2):
-    median_temperature =
-    return median_temperature
 
 if __name__ == "__main__":     
     main() 
