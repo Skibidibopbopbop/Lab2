@@ -12,4 +12,4 @@ def calculate_bmi(height, weight):
 
 
  
-calculate_bmi(weight=57, height=1.73) 
+calculate_bmi(weight=60, height=1.75) 
